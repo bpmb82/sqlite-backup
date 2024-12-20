@@ -15,4 +15,4 @@ FROM scratch
 
 COPY --from=builder /build/sqlite-backup .
 
-CMD ["/sqlite-backup"]
+CMD ["/sqlite-backup", "daemon"]
