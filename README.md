@@ -8,7 +8,10 @@ A simple service to create backups of SQLite database files by recursively scann
 
 ```docker build --load -t sqlite-backup:latest .```
 
+2. Run the Docker container:
 
+    ```docker compose up```
+    
 ## Environment Variables
 ```
 SOURCE_DB: Path to the SQLite database file inside container
