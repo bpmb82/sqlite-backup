@@ -9,13 +9,6 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
-      - name: Read version from 'Cargo.toml
-        uses: SebRollen/toml-action@v1.2.0
-        id: read_toml
-        with:
-          file: 'Cargo.toml'
-          field: 'package.version'
-
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
 
@@ -28,6 +21,13 @@ jobs:
           username: ${{ vars.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: Read version from 'Cargo.toml
+        uses: SebRollen/toml-action@v1.2.0
+        id: read_toml
+        with:
+          file: 'Cargo.toml'
+          field: 'package.version'
+          
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
