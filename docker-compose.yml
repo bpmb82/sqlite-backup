@@ -1,0 +1,11 @@
+services:
+
+  sqlite-backup:
+    image: sqlite-backup:latest
+    volumes:
+      - ./tmp/backup:/backup
+      - ./tmp/docker:/docker
+    environment:
+      - BACKUP_DIR=/backup
+      - SOURCE_DIR=/docker
+    restart: unless-stopped
