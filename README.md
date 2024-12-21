@@ -18,7 +18,7 @@ I use this as a part of my backup strategy for my self hosted services.
 ```
 SOURCE_DB: Path to the SQLite database file inside container
 BACKUP_DIR: Directory where backups will be stored inside container
-INTERVAL: Backup frequency (e.g., 12h, 24h, 7d)
+INTERVAL: Backup frequency (in hours, e.g. 24, defaults to 24)
 ```
 ### Volume Mounts
 Mount your database file and backup directory:
