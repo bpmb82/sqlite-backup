@@ -45,7 +45,7 @@ Backup directory: ```-v /host/path/backups:/backups```
 
 - ```backup```: Create a backup of the source directory.
 - ```restore```: Restore backup files to the source directory.
-- ```daemon```: Run the backup service in daemon mode, can take SOURCE_DIR and BACKUP_DIR environment variables or the arguments --source-dir and --backup-dir.
+- ```daemon```: Run the backup service in daemon mode, can take SOURCE_DIR and BACKUP_DIR environment variables or the arguments ```--source-dir``` and ```--backup-dir```.
 
 ### Arguments
 
