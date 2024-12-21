@@ -31,7 +31,7 @@ Backup directory: ```-v /host/path/backups:/backups```
 
 1. Clone the repository: 
 
-    ```git clone https://github.com/your-username/sqlite-backup.git```
+    ```git clone https://github.com/bpmb82/sqlite-backup.git```
 
 2. Build the project:
 
