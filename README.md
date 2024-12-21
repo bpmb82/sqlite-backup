@@ -55,10 +55,13 @@ Backup directory: ```-v /host/path/backups:/backups```
 ### Examples
 
 ```
+# Create a backup of the source directory
 ./target/release/sqlite-backup backup --source-dir=/path/to/db --backup-dir=/path/to/backups
 
+# Restore backup files to the source directory
 ./target/release/sqlite-backup restore --source-dir=/path/to/db --backup-dir=/path/to/backups
 
+# Run the backup service in daemon mode
 ./target/release/sqlite-backup daemon --source-dir=/path/to/db --backup-dir=/path/to/backups
 ```
 
